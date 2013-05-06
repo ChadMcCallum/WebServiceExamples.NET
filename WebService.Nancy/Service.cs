@@ -10,12 +10,12 @@ namespace WebService.Nancy
     {
         public Service()
         {
-            Get["/Echo/{input}"] = x => Echo(x.input);
+            Get["/ToUpper/{input}"] = x => ToUpper(x.input);
         }
 
-        private Response Echo(string input)
+        private Response ToUpper(string input)
         {
-            return Response.AsJson(input);
+            return Response.AsJson(input.ToUpper());
         }
     }
 }

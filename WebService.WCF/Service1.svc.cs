@@ -10,9 +10,9 @@ namespace WebService.WCF
     // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in code, svc and config file together.
     public class Service1 : IService1
     {
-        public string Echo(string input)
+        public string ToUpper(string input)
         {
-            return input;
+            return input.ToUpper();
         }
     }
 }

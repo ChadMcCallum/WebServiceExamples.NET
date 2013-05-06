@@ -6,7 +6,7 @@ using ServiceStack.ServiceHost;
 
 namespace WebService.ServiceStack
 {
-    [RestService("/Echo/{input}")]
+    [RestService("/ToUpper/{input}")]
     public class Request
     {
         public string Input { get; set; }

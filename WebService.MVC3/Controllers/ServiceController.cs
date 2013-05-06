@@ -8,9 +8,9 @@ namespace WebService.MVC3.Controllers
 {
     public class ServiceController : Controller
     {
-        public JsonResult Echo(string input)
+        public JsonResult ToUpper(string input)
         {
-            return Json(input, JsonRequestBehavior.AllowGet);
+            return Json(input.ToUpper(), JsonRequestBehavior.AllowGet);
         }
 
     }

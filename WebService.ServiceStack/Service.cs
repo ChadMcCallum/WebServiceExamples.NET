@@ -10,7 +10,7 @@ namespace WebService.ServiceStack
     {
         protected override object Run(Request request)
         {
-            return new Response() { Output = request.Input};
+            return new Response() { Output = request.Input.ToUpper()};
         }
     }
 }

@@ -11,10 +11,10 @@ namespace WebServiceExamples
         {
             var service = new asmxService.WebService1();
             service.Url = "http://localhost.:54929/WebService1.asmx";
-            Console.WriteLine(service.Echo("Hello World"));
+            Console.WriteLine(service.ToUpper("Hello World"));
 
             var service2 = new wcfService.Service1Client();
-            Console.WriteLine(service2.Echo("Hello World"));
+            Console.WriteLine(service2.ToUpper("Hello World"));
 
             Console.ReadLine();
         }

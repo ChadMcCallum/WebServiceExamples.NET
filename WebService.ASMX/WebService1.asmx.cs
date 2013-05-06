@@ -18,9 +18,9 @@ namespace WebService.ASMX
     {
 
         [WebMethod]
-        public string Echo(string input)
+        public string ToUpper(string input)
         {
-            return input;
+            return input.ToUpper();
         }
     }
 }

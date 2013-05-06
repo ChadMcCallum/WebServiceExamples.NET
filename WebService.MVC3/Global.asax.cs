@@ -28,7 +28,7 @@ namespace WebService.MVC3
             //);
 
             routes.MapRoute("api", "{controller}/{action}/{input}",
-                            new {controller = "Service", action = "Echo", input = UrlParameter.Optional}
+                            new {controller = "Service", action = "ToUpper", input = UrlParameter.Optional}
                 );
         }
 

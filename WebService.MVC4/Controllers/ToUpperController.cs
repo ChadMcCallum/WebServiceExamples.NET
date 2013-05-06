@@ -7,11 +7,11 @@ using System.Web.Mvc;
 
 namespace WebService.MVC4.Controllers
 {
-    public class EchoController : ApiController
+    public class ToUpperController : ApiController
     {
         public string Get(string input)
         {
-            return input;
+            return input.ToUpper();
         }
         
     }

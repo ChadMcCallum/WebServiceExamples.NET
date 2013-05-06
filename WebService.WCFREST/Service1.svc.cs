@@ -14,10 +14,10 @@ namespace WebService.WCFREST
     public class Service1
     {
         [OperationContract]
-        [WebGet(UriTemplate="/Echo/{input}", ResponseFormat = WebMessageFormat.Json)]
-        public string Echo(string input)
+        [WebGet(UriTemplate="/ToUpper/{input}", ResponseFormat = WebMessageFormat.Json)]
+        public string ToUpper(string input)
         {
-            return input;
+            return input.ToUpper();
         }
     }
 }

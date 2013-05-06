@@ -12,6 +12,6 @@ namespace WebService.WCF
     public interface IService1
     {
         [OperationContract]
-        string Echo(string input);
+        string ToUpper(string input);
     }
 }

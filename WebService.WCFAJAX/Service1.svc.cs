@@ -15,9 +15,9 @@ namespace WebService.WCFAJAX
     {
         [OperationContract]
         [WebGet]
-        public string Echo(string input)
+        public string ToUpper(string input)
         {
-            return input;
+            return input.ToUpper();
         }
     }
 }
