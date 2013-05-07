@@ -13,7 +13,7 @@ namespace WebService.ServiceStack
     {
         public class ServiceAppHost : AppHostBase
         {
-            public ServiceAppHost() : base("Service", typeof(Service).Assembly)
+            public ServiceAppHost() : base("Service", typeof(ToUpperService).Assembly)
             {
                 
             }

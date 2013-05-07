@@ -6,8 +6,8 @@ using ServiceStack.ServiceHost;
 
 namespace WebService.ServiceStack
 {
-    [RestService("/ToUpper/{input}")]
-    public class Request
+    [Route("/ToUpper/{input}")]
+    public class Request : IReturn<Response>
     {
         public string Input { get; set; }
     }
